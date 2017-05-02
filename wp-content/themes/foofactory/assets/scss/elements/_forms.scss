@@ -1,0 +1,181 @@
+// Search form
+/* .search-form {
+  @extend .form-inline;
+}
+.search-form label {
+  font-weight: normal;
+  @extend .form-group;
+}
+.search-form .search-field {
+  @extend .form-control;
+}
+.search-form .search-submit {
+  @extend .btn;
+  @extend .btn-default;
+} */
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}  
+}
+
+@include placeholder {
+    color: white;
+    font-weight:bold;
+}
+
+.form {
+	padding: 0 12em;
+	overflow:hidden;
+  color: #fff;
+  position:relative;
+  h1{
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+
+}
+
+.nf-form-cont{
+  margin-top:5em;
+  .nf-form-wrap{
+    .nf-response-msg{
+      @extend .p1;
+    }
+    .nf-debug-msg{
+
+    }
+    .nf-before-form{
+
+    }
+    .nf-form-layout{
+      position:relative;
+      >div{
+        position:relative;
+        display: inline-block;
+        width: 100%;
+        .nf-before-form-content{
+          .nf-form-fields-required{
+            @extend .p1;
+            position: absolute;
+            color: #fff;
+            bottom: 30px;
+            padding-left: 30px;
+            .ninja-forms-req-symbol{
+
+            }
+          }
+        }
+        .nf-form-content{
+          .nf-field-container{
+            @extend .col-md-6;
+            @extend .col-xs-12;
+            clear:left;
+            margin-bottom: 0.5em;
+            .nf-before-field{
+
+            }
+            .nf-field{
+              .field-wrap{
+                .nf-field-label{
+                  label{
+                    span{
+
+                    }
+                  }
+                }
+                .nf-field-element{
+                  .nf-element{
+                    
+                  }
+                }
+                &.textbox-wrap{
+
+                }
+                &.email-wrap{
+
+                }
+              }
+            }
+
+            &.textbox-container{
+
+            }
+            &.textarea-container{
+              @extend .col-md-6;
+              position:absolute;
+              top: 0;
+              right: 0;
+            }
+            &.submit-container{
+              display: inline-block;
+              width: 100%;
+              text-align:right;
+              padding-right:1.5em;
+              margin-top: 2em;
+              .ninja-forms-field{
+                @extend .btn;
+                @extend .p1;
+              }
+            }
+            input[type='text'],
+            input[type='email']{
+              @extend .p1;
+              font-weight:900;
+              background: transparent;
+              border: 3px solid #fff;
+              height: 60px;
+              color:#fff;
+              padding:1em; 
+            }
+            textarea{
+              @extend .p1;
+              font-weight:900;
+              background: transparent;
+              border: 3px solid #fff;
+              height: 200px;
+              color:#fff;
+              padding:1em;
+            } 
+            
+            
+            
+            .nf-after-field{
+              .nf-error-wrap{
+                .nf-error-msg{
+                  position: absolute;
+                  top: 3px;
+                  right: 8px;
+                  background-color: $color1;
+                  padding: .5em;
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+        .nf-after-form-content{
+          .nf-form-errors{
+            .nf-error-msg{
+              @extend .p1;
+              position: absolute;
+              display: inline-block;
+              text-align: center;
+              width: 100%;
+              top: -43px;
+              left: 0;
+              color: #fff;
+              background-color: $color1;
+              padding: 0.5em;
+            }
+          }
+        }
+      }
+    }
+    .nf-after-form{
+
+    }
+  }
+}

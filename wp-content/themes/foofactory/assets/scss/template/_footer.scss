@@ -1,0 +1,9 @@
+#footer {
+	clear:both;
+	width:100%;
+	display:inline-block;
+  @extend .padding-4-top;
+  @extend .padding-4-bottom;
+  background: #000;
+  color:#fff;
+}

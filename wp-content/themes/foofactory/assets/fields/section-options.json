@@ -1,0 +1,294 @@
+  [
+    {
+        "key": "group_5768d5611288c",
+        "title": "Section Options - Option",
+        "fields": [
+            {
+                "key": "field_577c9ab1e29bf",
+                "label": "Reset",
+                "name": "show_advanced",
+                "type": "column",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "column-type": "1_1"
+            },
+            {
+                "key": "field_577c98e418d49",
+                "label": "Section Options",
+                "name": "section_options",
+                "type": "accordion",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "icon_class": "dashicons-admin-settings"
+            },
+            {
+                "key": "field_5768d5cd60f50",
+                "label": "Section Width",
+                "name": "section_width",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "container-fluid": "Full screen width",
+                    "container": "Container width"
+                },
+                "default_value": [
+                    "container-fluid"
+                ],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "disabled": 0,
+                "readonly": 0,
+                "return_format": "value"
+            },
+            {
+                "key": "field_5768d60a60f51",
+                "label": "Id",
+                "name": "id",
+                "type": "text",
+                "instructions": "this is to denote a section over another, usually only for developers",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "#",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_5779cdd65af53",
+                "label": "Text Align",
+                "name": "text_align",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "text-center": "Center Text",
+                    "text-left": "Text to the left",
+                    "text-right": "Text to the right"
+                },
+                "default_value": [
+                    "text-left"
+                ],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "disabled": 0,
+                "readonly": 0,
+                "return_format": "value"
+            },
+            {
+                "key": "field_57a2bef015306",
+                "label": "Section styling",
+                "name": "section_styling",
+                "type": "repeater",
+                "instructions": "These styles are taken in the order (1 Top) (2 Right ) (3 Bottom) (4 Left)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 4,
+                "max": 4,
+                "layout": "table",
+                "button_label": "Add Styling",
+                "sub_fields": [
+                    {
+                        "key": "field_57a2c25d6cfaf",
+                        "label": "Outside Margin",
+                        "name": "margin",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "margin-0": "No Inside Margin",
+                            "margin-2": "Small",
+                            "margin-4": "Medium",
+                            "margin-6": "Large"
+                        },
+                        "default_value": [
+
+                        ],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "ajax": 0,
+                        "placeholder": "",
+                        "disabled": 0,
+                        "readonly": 0,
+                        "return_format": "value"
+                    },
+                    {
+                        "key": "field_57a2c1098e167",
+                        "label": "Inside Margin",
+                        "name": "padding",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "padding-0": "No Inside Margin",
+                            "padding-2": "Small",
+                            "padding-4": "Medium",
+                            "padding-6": "Large",
+                            "padding-8": "Huge",
+                            "padding-10": "Massive"
+                        },
+                        "default_value": [
+
+                        ],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "ajax": 0,
+                        "placeholder": "",
+                        "disabled": 0,
+                        "readonly": 0,
+                        "return_format": "value"
+                    },
+                    {
+                        "key": "field_57a2c2586cfae",
+                        "label": "Border",
+                        "name": "border",
+                        "type": "true_false",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "message": "",
+                        "default_value": 0
+                    }
+                ]
+            },
+            {
+                "key": "field_5768d61360f52",
+                "label": "Background Color",
+                "name": "background_color",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "blue-bg": "Blue",
+                    "white-bg": "White",
+                    "red-dark-bg": "Dark Red",
+                    "red-bg": "Red",
+                    "grey-light-bg": "Light Grey",
+                    "grey-bg": "Grey",
+                    "teal-bg": "Teal"
+                },
+                "default_value": [
+                    "white"
+                ],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "disabled": 0,
+                "readonly": 0,
+                "return_format": "value"
+            },
+            {
+                "key": "field_5768dd3c5c1b3",
+                "label": "Background Image",
+                "name": "background_image",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    }
+]

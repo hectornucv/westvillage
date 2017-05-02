@@ -1,0 +1,49 @@
+@mixin triangle($size, $color, $direction) {
+    height: 0;
+    width: 0;
+    border-color: transparent;
+    border-style: solid;
+
+    @if $direction == top {
+      border-bottom-color: $color;
+      border-width: $size / 2;
+    } @else if $direction == right {
+      border-left-color:   $color;
+      border-width: $size / 2;
+    } @else if $direction == bottom {
+      border-top-color:    $color;
+      border-width: $size / 2;
+    } @else if $direction == left {
+      border-width: $size / 2;
+      border-right-color:  $color;
+    } @else if $direction == top-right {
+      border-width: 0 $size $size 0;
+      border-color: transparent $color transparent transparent;
+
+    } @else if $direction == top-left {
+      border-width:  $size $size 0 0;
+      border-color: $color transparent  transparent transparent;
+     
+    } @else if $direction == bottom-right {
+      border-width: 0 0 $size $size;
+      border-color: transparent transparent $color transparent;
+    
+    } @else if $direction == bottom-left {
+      border-width: $size 0 0 $size;
+      border-color: transparent transparent transparent $color;
+    }
+   
+}
+@mixin scalene-triangle($width,$height,$color,$direction){
+  width: 0;
+  height: 0;
+  border-style: solid;
+  @if $direction == left {
+  border-width: 0 0 $height $width;
+  border-color: transparent transparent transparent $color;
+  }
+  @if $direction == right {
+  border-width:  $height $width 0 0;
+  border-color:    transparent $color;
+  }
+}

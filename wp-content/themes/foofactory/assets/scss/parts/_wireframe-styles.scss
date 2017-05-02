@@ -1,0 +1,73 @@
+
+section {
+		padding-top:3em;
+		padding-bottom:3em;
+		margin-top:1em;
+		margin-bottom:1em;
+		border-top:2px dashed $color3;
+		border-bottom:2px dashed $color3;
+		&.homepage-heading {
+			padding-top: 0em;
+			padding-bottom: 0em;
+			.owl-nav{
+					position: absolute;
+			    margin: 0 auto;
+			    bottom: 5px;
+			    text-align: center;
+			    display: inline-block;
+			    width: 100%;
+			    color: #000;
+			    		div {
+			    			    display: inline;
+			    padding: 1em;
+			    font-size: 2em;
+			    font-weight: bold;
+			    		}
+			}
+			.slide {
+				padding-top:10em;
+				padding-bottom:10em;
+				background-size:cover;
+			}
+
+		}
+		&.page-heading {
+			padding-top: 10em;
+			padding-bottom: 10em;
+
+		}
+		&.slider {
+			padding-top:4em;
+			padding-top:4em;
+		}
+}
+.element,
+.molecule {
+	display:inline-block;
+		&.slider {
+			padding-top:6em;
+			padding-bottom:10em;
+			.owl-nav{
+					position: absolute;
+			    margin: 0 auto;
+			    bottom: 5px;
+			    text-align: center;
+			    display: inline-block;
+			    width: 100%;
+			    color: #000;
+			    		div {
+			    			    display: inline;
+			    padding: 0em;
+			    font-size: 1.5em;
+			    font-weight: bold;
+			    		}
+			}
+		}
+		&.oembed{
+			iframe,twitterwidget {
+				min-height: 340px;
+		    min-width: 100% !important;
+		    max-width: 100% !important;
+			}
+		}
+}

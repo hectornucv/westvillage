@@ -1,0 +1,33 @@
+.oembed {
+	.placeholder.video {
+		position:relative;
+		i {
+			  font-size: 10em;
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		    color: #fff;
+		    text-align: center;
+		    height: 100%;
+		    line-height: 4.5;
+		    cursor: pointer; 
+		}
+		iframe {
+			opacity:0;
+			transition:0.3s ease all;
+			position: relative;
+			width:0px;
+		}
+		&.playing {
+			i { display:none;}
+				iframe {
+				opacity:1;
+				transition:0.3s ease all;
+				position: relative;
+				z-index: 9;
+				width:100%; 
+			}
+		}
+	}
+}

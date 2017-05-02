@@ -1,0 +1,53 @@
+/**!
+Theme Name: Foofactory
+Description: a wordpress theme using ACF, Webpack and Sass
+this theme/builder works in conjunction with Parcel
+Author: Alexander King & Hector Nuvero
+Version: 1.0
+Text Domain: foofactory
+*/
+
+a.acf-icon.-minus.small {
+    content: "DELETE";
+    width: auto;
+    border-radius: 0px;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-right: 5em;
+}
+
+a.acf-icon.-minus.small:before {
+    content: "DELETE";
+    width: auto;
+    height: auto;
+    font-family: inherit;
+}
+
+a.acf-icon.-minus.small:before {
+    content: "DELETE";
+    width: auto;
+    height: auto;
+    font-family: inherit;
+}
+.acf-field-accordion h2 span.dashicons-before:before, .field_type-accordion h2 span.dashicons-before:before {
+    color:#0085ba !important;
+}
+.layout {
+    border:1px solid #0085ba !important;
+}
+.layout .acf-fc-layout-handle {
+    background:#0085ba; !important;
+        color: #fff !important;
+}
+.layout.-collapsed  .acf-fc-layout-handle{
+     background:#fff; !important;
+         color: #000 !important;
+}
+.layout.-collapsed  {
+    border:1px solid #e1e1e1 !important;
+}
+
+.layout.-collapsed .acf-fc-layout-handle:hover {
+    background: #ececec;
+    font-weight: bold !important;
+}

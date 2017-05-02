@@ -1,0 +1,14 @@
+.woocommerce {
+
+}
+
+.product.type-product {
+  img {}
+  .wrapper {
+    h3 { @extend .h3; }
+    .price {}
+  }
+  .add_to_cart_button {
+    @extend .btn;
+  }
+}

@@ -1,0 +1,7 @@
+.btn {
+	@include button($color4,$color1,#fff,#000);
+	@extend .p1;
+	text-transform:uppercase;
+
+  padding: 12px 40px
+}

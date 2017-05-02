@@ -1,0 +1,96 @@
+  [
+    {
+        "key": "group_5784862119b97",
+        "title": "Media - Element",
+        "fields": [
+            {
+                "key": "field_57a29c58ba7b1",
+                "label": "Type of Media",
+                "name": "type_of_media",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "video": "Video",
+                    "tweet": "Tweet"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "",
+                "layout": "horizontal"
+            },
+            {
+                "key": "field_57a29c0fba7b0",
+                "label": "Placeholder",
+                "name": "placeholder",
+                "type": "image",
+                "instructions": "This is cover the video until clicked, once clicked it will be removed and show the video.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_57a29c58ba7b1",
+                            "operator": "==",
+                            "value": "video"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_57848628701ab",
+                "label": "Embed",
+                "name": "embed",
+                "type": "oembed",
+                "instructions": "List of supported embed content here https:\/\/codex.wordpress.org\/Embeds#Okay.2C_So_What_Sites_Can_I_Embed_From.3F\r\n",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "width": "",
+                "height": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "special",
+                    "operator": "==",
+                    "value": "nowhere"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    }
+]

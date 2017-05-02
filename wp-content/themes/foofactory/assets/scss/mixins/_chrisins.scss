@@ -1,0 +1,67 @@
+/* Media Querys */
+@mixin mq_arg($property, $xl-size:null, $lg-size:null, $md-size:null, $sm-size:null, $xs-size:null) {
+    @media screen and (max-width: $mq-xl) {
+        #{$property}: $xl-size;
+    }
+    @media screen and (max-width:$mq-lg) {
+        #{$property}: $lg-size;
+    }
+    @media screen and (max-width:$mq-md) {
+        #{$property}: $md-size;
+    }
+    @media screen and (max-width:$mq-sm) {
+        #{$property}: $sm-size;
+    }
+    @media screen and (max-width:$mq-xs) {
+        #{$property}: $xs-size;
+    }
+}
+
+@mixin media($query) {
+    @media only screen and (max-width: $query) {
+        @content;
+    }
+}
+
+/* Fonts */
+@mixin font_stack_sans($font-fam) {
+    font-family: $font-fam, 'Arial', sans-serif;
+}
+
+@mixin font_stack_serif($font-fam) {
+    font-family: $font-fam, 'Open Sans', 'Arial', serif;
+}
+
+@mixin roboto {
+    @include font_stack_sans('Roboto');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin playfair {
+    @include font_stack_serif('Playfair Display');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@mixin bebas {
+    @include font_stack_sans('Bebas Neue');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* General */
+$opacity-hover: 0.6;
+$opacity-active: 0.8;
+@mixin hover_states {
+    &:hover {
+        opacity: $opacity-hover;
+    }
+    &:active {
+        opacity: $opacity-active;
+    }
+}
+
+
+
+

@@ -1,0 +1,39 @@
+.general-content {
+    .wrapper{
+        width: 90%;
+        max-width: 900px;
+        hgroup{
+            h2 {
+                color: $purple;
+                display: block;
+                margin-top: 20px;
+            }
+        }
+        p {
+            color: $darkgrey;
+            display: block;
+            margin-top: 20px;
+            font-size: 24px;
+            line-height: 170%;
+            a {
+                color: $purple;
+                text-decoration: underline;
+            }
+        }
+        .btn {
+            display: inline-block;
+            margin: 0 auto;
+            margin-top: 35px;
+            color: $white;
+            line-height: 24px;
+            background-color: $lavender;
+            @include playfair;
+            text-transform: lowercase;
+            text-align: center;
+            min-width: 175px;
+            padding: 20px 35px 20px 35px;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+    }
+}

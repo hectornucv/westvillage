@@ -1,0 +1,124 @@
+.acf-fields > .acf-field.acf-field-accordion,
+#acf_4.postbox .field_type-accordion {
+    cursor: pointer;
+    position: relative;
+    padding: 8px 0;
+}
+
+.acf-field-accordion h2 span.dashicons-before:before,
+.field_type-accordion h2 span.dashicons-before:before {
+	color: #2ea2cc;
+	font-size: 1.2em;
+    line-height: 1;
+    text-indent: -20px;
+    margin-left: 20px;
+	top: 5px;
+	position: relative;
+}
+
+#poststuff .acf-field-accordion h2,
+#poststuff .field_type-accordion h2 {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+	font-size: 1.3em;
+}
+
+.acf-field-accordion .acf-label,
+.field_type-accordion .label {
+    display: none;
+}
+
+.acf-field-accordion:hover,
+.acf-field-accordion.active,
+.acf-field-accordion.opened,
+.field_type-accordion:hover,
+.field_type-accordion.active,
+.field_type-accordion.opened  {
+    background: #f1f1f1;
+}
+
+.acf-field-accordion:hover:before,
+.acf-field-accordion.opened:before,
+.field_type-accordion:hover:before,
+.field_type-accordion.opened:before {
+	position: absolute;
+	font-family: dashicons;
+	color: #2ea2cc;
+}
+
+.acf-field-accordion:hover:before,
+.field_type-accordion:hover:before {
+	content: "\f132";
+	font-size: 20px;
+	right: 20px;
+	top: 16px;
+}
+
+.acf-field-accordion.opened:before,
+.field_type-accordion.opened:before {
+	content: "\f335";
+	font-size: 24px;
+	right: 18px;
+	top: 14px;
+}
+
+.acf-accordion-group {
+	display: none;
+	padding: 10px 10px 0 10px;
+}
+
+.acf-accordion-group.opened {
+    display: block;
+}
+
+/* ACF 5 non pro - specific css */
+#acf_5.postbox .acf-accordion-group {
+    padding: 10px;
+}
+
+#acf_5.postbox .acf-field-accordion:hover:before,
+#acf_5.postbox .field_type-accordion:hover:before {
+    top: 33px;
+}
+
+#acf_5.postbox .acf-field-accordion.opened:before,
+#acf_5.postbox .field_type-accordion.opened:before {
+    top: 30px;
+}
+
+/* ACF 4 - specific css */
+#acf_4.postbox .acf-accordion-group {
+	padding: 10px;
+}
+
+#acf_4.postbox .acf-field-accordion:hover:before,
+#acf_4.postbox .field_type-accordion:hover:before {
+    top: 33px;
+}
+
+#acf_4.postbox .acf-field-accordion.opened:before,
+#acf_4.postbox .field_type-accordion.opened:before {
+    top: 30px;
+}
+
+/* specific css for seamless field groups*/
+.acf-postbox.seamless > .acf-fields > .acf-field.acf-field-accordion,
+#acf_4.postbox.no_box  .field_type-accordion {
+	padding: 8px;
+	border: 1px solid #CCCCCC;
+	background: #ffffff;
+	margin-top: -1px;
+}
+
+.acf-postbox.seamless > .acf-fields > .acf-field.acf-field-accordion.opened,
+#acf_4.postbox.no_box .field_type-accordion.opened {
+	border-bottom: none;
+}
+
+.acf-postbox.seamless .acf-accordion-group.opened,
+#acf_4.postbox.no_box .acf-accordion-group.opened {
+	border: 1px solid #CCCCCC;
+	border-top: none;
+	background: #ffffff;
+}
