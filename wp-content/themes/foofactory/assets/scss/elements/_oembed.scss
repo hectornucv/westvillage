@@ -1,5 +1,9 @@
 .oembed {
 	.placeholder.video {
+		background-color: $purplegrey;
+		width:50%;
+		display: inline-block;
+		float: left;
 		position:relative;
 		i {
 			  font-size: 10em;
@@ -28,6 +32,15 @@
 				z-index: 9;
 				width:100%; 
 			}
+		}
+	}
+	.content-wrapper{
+		display: inline-block;
+		float: left;
+		text-align: left;
+		width:50%;
+		h2,p{
+			padding-left: 60px; 
 		}
 	}
 }

@@ -14,10 +14,11 @@
 
 
 /*============================
-=            Atom            =
+=            Parts           =
 ============================*/
 @import "parts/fonts";
 @import "parts/global";
+@import "parts/slide";
 // @import "parts/wireframe-styles";
 
 /*================================
@@ -37,7 +38,10 @@
 =            sections            =
 ================================*/
 @import 'sections/section-container';
-@import 'sections/slider';
+@import 'sections/s3-x-card';
+@import 'sections/floor-plan';
+@import "sections/section-card";
+
 
 /*=================================
 =            Templates            =

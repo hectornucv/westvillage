@@ -4,6 +4,8 @@
 	  <p class="text-center title">
   	  <?php echo $vars['title'] ?>
   	</p>
-  	<p><?php echo $vars['content']; ?></p>
+  	<?php if(isset($vars["content"]) && strlen($vars["content"]) > 0) { ?>
+		<?php echo apply_filters('the_content',  $vars["content"]); ?>
+		<?php } ?>
   </div>
 </div>

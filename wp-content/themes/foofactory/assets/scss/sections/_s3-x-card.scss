@@ -1,0 +1,23 @@
+.s3-x-card{
+	article{
+		width: 33.333333%;
+		float:left;
+		height: 477px;
+		color:#fff;
+		padding: 69px;
+		@include bebas;
+		.title{
+			text-transform: uppercase;
+			margin-bottom: 2em;
+		}
+		&.first{
+			background-color: $peach;
+		}
+		&.second{
+			background-color: $purplegrey;
+		}
+		&.third{
+			background-color: $lightblue;
+		}
+	}
+}

@@ -50,6 +50,7 @@ foreach ($layout_builder as $key => $value) {
 	// 	echo '<div class="container">';
 	// }
 			get_component([
+						'remove_tags' => $value['remove_elements'],
 						'template' => 'sections/'.$section_file,
 						'vars' => $value
 			]);
