@@ -1,5 +1,3 @@
-
-
 <?php wp_head(); ?>
 <?php get_component([ 'template' => 'needed/head' ]); ?>
 </head>
