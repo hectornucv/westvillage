@@ -7,7 +7,7 @@ if (!defined('DB_USER')) {
 	define('DB_USER', 'root');
 }
 if (!defined('DB_PASSWORD')) {
-	define('DB_PASSWORD', 'surge');
+	define('DB_PASSWORD', 'romeo');
 }
 if (!defined('DB_HOST')) {
 	define('DB_HOST', 'localhost');
@@ -23,8 +23,8 @@ if (!defined('DB_COLLATE')) {
 	define('DB_COLLATE', '');
 }
 
-	define('WP_HOME','http://localhost/westvillage/');
-	define('WP_SITEURL','http://localhost/westvillage/');
+	define('WP_HOME','https://dev.romeo.digital/westvillage/');
+	define('WP_SITEURL','https://dev.romeo.digital/westvillage/');
 
 
  ?>
