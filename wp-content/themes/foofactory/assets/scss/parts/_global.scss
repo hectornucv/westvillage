@@ -385,20 +385,20 @@ button:focus {
     $border-style:5px solid #fff;
     @for $i from 0 through 10 {
     	$direction : top;
-      .padding-#{$i}-#{$direction}{padding-#{$direction}: 0em + $i;}
-      .margin-#{$i}-#{$direction}{ margin-#{$direction}: 0em + $i;}
+      .padding-#{$i}-#{$direction}{padding-#{$direction}: (0px + $i)*10;}
+      .margin-#{$i}-#{$direction}{ margin-#{$direction}: (0px + $i)*10;}
       .border-#{$direction}{ border-#{$direction}: $border-style; }
       $direction : right;
-      .padding-#{$i}-#{$direction}{padding-#{$direction}: 0em + $i;}
-      .margin-#{$i}-#{$direction}{margin-#{$direction}: 0em + $i;}
+      .padding-#{$i}-#{$direction}{padding-#{$direction}: (0px + $i)*10;}
+      .margin-#{$i}-#{$direction}{margin-#{$direction}: (0px + $i)*10;}
       .border-#{$direction}{ border-#{$direction}: $border-style; }
       $direction : left;
-      .padding-#{$i}-#{$direction}{padding-#{$direction}: 0em + $i;}
-      .margin-#{$i}-#{$direction}{margin-#{$direction}: 0em + $i;}
+      .padding-#{$i}-#{$direction}{padding-#{$direction}: (0px + $i)*10;}
+      .margin-#{$i}-#{$direction}{margin-#{$direction}: (0px + $i)*10;}
       .border-#{$direction}{ border-#{$direction}: $border-style; }
       $direction : bottom;
-      .padding-#{$i}-#{$direction}{padding-#{$direction}: 0em + $i;}
-      .margin-#{$i}-#{$direction}{ margin-#{$direction}: 0em + $i;}
+      .padding-#{$i}-#{$direction}{padding-#{$direction}: (0px + $i)*10;}
+      .margin-#{$i}-#{$direction}{ margin-#{$direction}: (0px + $i)*10;}
       .border-#{$direction}{ border-#{$direction}: $border-style; }
     }
 

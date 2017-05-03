@@ -4,6 +4,47 @@
 	display:inline-block;
   @extend .padding-4-top;
   @extend .padding-4-bottom;
-  background: #000;
+  background: $grey;
   color:#fff;
+  font-size:18px;
+  .block-left{
+		display: inline-block;
+		float: left;
+  }
+  .block-right{
+		display: inline-block;
+		float: right;
+		width: 490px;
+		.info{
+			display: inline-block;
+	    width: 50%;
+	    float: left;
+	    ul{
+	    	display: inline-block;
+    		float: right;
+	    }
+		}
+		.menu-part{
+			display: inline-block;
+			float:right;
+			.copyright{
+				display: inline-block;
+				float:left;
+				li{
+					margin-right: 20px;
+				}
+			}
+			.menu-footer-container{
+				display: inline-block;
+    		float: left;
+				li{
+					float:left;
+					margin-right: 20px;
+					&:last-child{
+						margin-right: 0px;
+					}
+				}
+			}
+		}
+  }
 }
